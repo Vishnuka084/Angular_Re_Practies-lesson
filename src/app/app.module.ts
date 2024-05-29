@@ -1,15 +1,14 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CustomerComponent } from './components/customer/customer.component';
-import { ProductComponent } from './components/product/product.component';
-import { OrderComponent } from './components/order/order.component';
-import { NotfoundComponent } from './components/notfound/notfound.component';
-import { NewCustomerComponent } from './components/inner/new-customer/new-customer.component';
-import { AllCustomerComponent } from './components/inner/all-customer/all-customer.component';
-import { AllCustomersComponent } from './components/inner/all-customers/all-customers.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {CustomerComponent} from './components/customer/customer.component';
+import {ProductComponent} from './components/product/product.component';
+import {OrderComponent} from './components/order/order.component';
+import {NotfoundComponent} from './components/notfound/notfound.component';
+import {NewCustomerComponent} from './components/inner/new-customer/new-customer.component';
+import {AllCustomersComponent} from './components/inner/all-customers/all-customers.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { AllCustomersComponent } from './components/inner/all-customers/all-cust
     OrderComponent,
     NotfoundComponent,
     NewCustomerComponent,
-    AllCustomerComponent,
     AllCustomersComponent,
 
   ],
@@ -30,4 +28,5 @@ import { AllCustomersComponent } from './components/inner/all-customers/all-cust
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
