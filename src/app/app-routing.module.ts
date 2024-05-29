@@ -8,7 +8,7 @@ import {NewCustomerComponent} from "./components/customer/inner/new-customer/new
 import {AllCustomersComponent} from "./components/customer/inner/all-customers/all-customers.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/customer', pathMatch: 'full'},
+  {path: '', redirectTo: '/customer/new', pathMatch: 'full'},
   {
     path: 'customer', component: CustomerComponent, children: [
       {path: 'new', component: NewCustomerComponent},
