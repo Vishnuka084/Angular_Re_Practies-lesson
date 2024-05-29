@@ -1,22 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {CustomerComponent} from "./components/customer/customer.component";
-import {OrderComponent} from "./components/order/order.component";
-import {ProductComponent} from "./components/product/product.component";
 import {NotfoundComponent} from "./components/notfound/notfound.component";
-import {NewCustomerComponent} from "./components/customer/inner/new-customer/new-customer.component";
-import {AllCustomersComponent} from "./components/customer/inner/all-customers/all-customers.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: '/customer/new', pathMatch: 'full'},
-  {
-    path: 'customer', component: CustomerComponent, children: [
-      {path: 'new', component: NewCustomerComponent},
-      {path: 'list', component: AllCustomersComponent},
-    ],
-  },
-  {path: 'order', component: OrderComponent},
-  {path: 'product/:id', component: ProductComponent},
+  {path:'', redirectTo:'/customer',pathMatch:'full'},
+  { path: 'customer', loadChildren: () => import('./modules/customer/customer.module').then(m => m.CustomerModule) },
+  { path: 'product', loadChildren: () => import('./modules/product/product.module').then(m => m.ProductModule) },
+  { path: 'order', loadChildren: () => import('./modules/order/order.module').then(m => m.OrderModule) },
   {path: '**', component: NotfoundComponent},
 ];
 
