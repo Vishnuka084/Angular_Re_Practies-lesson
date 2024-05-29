@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { ProductComponent } from './components/product/product.component';
 import { OrderComponent } from './components/order/order.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { OrderComponent } from './components/order/order.component';
     CustomerComponent,
     ProductComponent,
     OrderComponent,
+    NotfoundComponent,
 
   ],
   imports: [
