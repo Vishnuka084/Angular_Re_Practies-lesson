@@ -4,8 +4,8 @@ import {CustomerComponent} from "./components/customer/customer.component";
 import {OrderComponent} from "./components/order/order.component";
 import {ProductComponent} from "./components/product/product.component";
 import {NotfoundComponent} from "./components/notfound/notfound.component";
-import {NewCustomerComponent} from "./components/inner/new-customer/new-customer.component";
-import {AllCustomersComponent} from "./components/inner/all-customers/all-customers.component";
+import {NewCustomerComponent} from "./components/customer/inner/new-customer/new-customer.component";
+import {AllCustomersComponent} from "./components/customer/inner/all-customers/all-customers.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/customer', pathMatch: 'full'},
